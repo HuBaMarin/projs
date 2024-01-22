@@ -1,0 +1,22 @@
+/* Para las imágenes en el aside*/
+.aside1img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Para la fecha */
+#mostrarFecha {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+}
+.aside1img img{
+    display: block;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

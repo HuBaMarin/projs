@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>¿Unas hamburguesitas o k?</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<main class="main">
+
+    <header class="head">
+        <img src="img/logo.png" alt="logo" width="200px">
+    </header>
+
+    <section class="seccion-1">
+        <article class="articuloP">
+            <!--Apartado de Hamburguesas-->
+            <article class="articulo-1">
+                <aside class="aside-1">
+                    <img
+                            src="img/hamburguesa.jpg"
+                            alt="hamburguesa 100g"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadBurguer100g"><abbr
+                            title="Beacon, Lechuga, Carne de Vacuno 100g, Tomate, Salsa Barbacoa, Queso"
+                            style="text-decoration: none;">Hamburguesa de Carne 100g - 5$</abbr></label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadBurguer100g" name="cantidadBurguer100g" min="0" placeholder="cantidad">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionHamburguesa()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/hamburguesa.jpg"
+                            alt="hamburguesa 200g"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadBurguer200g"><abbr
+                            title="Beacon, Lechuga, Carne de Vacuno 200g, Tomate, Salsa Barbacoa, Queso"
+                            style="text-decoration: none;">Hamburguesa de Carne 200g - 10$</abbr></label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadBurguer200g" name="cantidadBurguer200g" min="0" placeholder="cantidad">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionHamburguesa()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/hamburguesa.jpg"
+                            alt="hamburguesa 300g"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadBurguer300g"><abbr
+                            title="Beacon, Lechuga, Carne de Vacuno 300g, Tomate, Salsa Barbacoa, Queso"
+                            style="text-decoration: none;">Hamburguesa de Carne 300g - 15$</abbr></label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadBurguer300g" name="cantidadBurguer300g" min="0" placeholder="cantidad">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionHamburguesa()">
+                    </div>
+                </aside>
+            </article>
+
+            <!--Apartado de Patatas-->
+            <article class="articulo-1">
+                <aside class="aside-1">
+                    <img
+                            src="img/patatas.jpg"
+                            alt="Patatas Pequeñas"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadPatPeque">Patatas Pequeñas - 2$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadPatPeque" name="cantidadPatPeque" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionPatatas()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/patatas.jpg"
+                            alt="Patatas Medianas"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadPatMed">Patatas Medianas - 3$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadPatMed" name="cantidadPatMed" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionPatatas()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/patatas.jpg"
+                            alt="patatas Grandes"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadPatGran">Patatas Grandes - 4$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadPatGran" name="cantidadPatGran" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionPatatas()">
+                    </div>
+                </aside>
+            </article>
+
+            <!--Apartado de Vaso-->
+            <article class="articulo-1">
+                <aside class="aside-1">
+                    <img
+                            src="img/vaso.jpg"
+                            alt="Vaso Pequeño"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadVaso05">Vaso 0,5L - 1$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadVaso05" name="cantidadVaso05" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionVasos()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/vaso.jpg"
+                            alt="Vaso Mediano"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadVaso075">Vaso 0,75L - 2$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadVaso075" name="cantidadVaso075" min="0" value="0">
+                    </div>
+
+                    <div>
+                        <input type="button" value="Información" onclick="informacionVasos()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/vaso.jpg"
+                            alt="Vaso Grande"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadVaso1">Vaso 1L - 3$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadVaso1" name="cantidadVaso1" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionVasos()">
+                    </div>
+                </aside>
+            </article>
+
+            <!--Apartado de Nuggets-->
+            <article class="articulo-1">
+                <aside class="aside-1">
+                    <img
+                            src="img/nuggets.jpg"
+                            alt="Vaso Pequeño"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadNug1">6 Nuggets - 6$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadNug1" name="cantidadNug1" min="0" value="0">
+                    </div>
+
+
+                    <div>
+                        <input type="button" value="Información" onclick="informacionNuggets()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/nuggets.jpg"
+                            alt="Vaso Mediano"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadNug2">12 Nuggets - 10$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadNug2" name="cantidadNug2" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionNuggets()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/nuggets.jpg"
+                            alt="Vaso Grande"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadNug3">24 Nuggets - 15$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadNug3" name="cantidadNug3" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionNuggets()">
+                    </div>
+                </aside>
+            </article>
+
+            <!--Apartado de McFlurry-->
+            <article class="articulo-1">
+                <aside class="aside-1">
+                    <img
+                            src="img/mcflurry.jpeg"
+                            alt="Vaso Pequeño"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadMc1">McFlurry Pequeño - 2$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadMc1" name="cantidadMc1" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionMcFlurry()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/mcflurry.jpeg"
+                            alt="Vaso Mediano"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadMc2">McFlurry Mediano - 3$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadMc2" name="cantidadMc2" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionMcFlurry()">
+                    </div>
+                </aside>
+                <aside class="aside-1">
+                    <img
+                            src="img/mcflurry.jpeg"
+                            alt="Vaso Grande"
+                            class="img-1"
+                            width="200px"
+                    />
+                    <label for="cantidadMc3">McFlurry Grande - 4$</label>
+                    <div class="div-1">
+                        <input type="number" id="cantidadMc3" name="cantidadMc3" min="0" value="0">
+                    </div>
+                    <div>
+                        <input type="button" value="Información" onclick="informacionMcFlurry()">
+                    </div>
+                </aside>
+            </article>
+        </article>
+
+        <!--Apartado de pagar y ticket-->
+        <aside class="asideP">
+            <input type="button" onclick="calcularPrecio()" value="VER PEDIDO" id="btnPedido">
+            <div id="miTicket"></div>
+            <div id="pagar">
+                <p>PRECIO:</p>
+                <div id="precioF"></div>
+                <input type="button" onclick="pagarTicket()" value="PAGAR" id="btnPagar">
+            </div>
+
+            <div id="ticketnum1">
+                <h2>RECOGE AQUÍ TU TICKET</h2>
+                <div id="ticketnum2">
+                    <p onclick="pagarTicket()" id="titulo"></p>
+                    <p onclick="pagarTicket()" id="numRandom"></p>
+                </div>
+                <div id="reinicio">
+                    <a href="index.html" id="link"><input type="button" onclick="empezarPedido()" value="NUEVO PEDIDO"></a>
+                    <input type="button" onclick="cancelarPedido()" value="CANCELAR PEDIDO" id="btnCancelar">
+                </div>
+                <p id="mostrarFecha"></p>
+            </div>
+        </aside>
+
+        <aside>
+
+            <label for=""> Observaciones</label><textarea name="" id="" cols="30" rows="10"></textarea>
+        </aside>
+    </section>
+</main>
+</body>
+</html>
