@@ -29,7 +29,7 @@
                             title="Beacon, Lechuga, Carne de Vacuno 100g, Tomate, Salsa Barbacoa, Queso"
                             style="text-decoration: none;">Hamburguesa de Carne 100g - 5$</abbr></label>
                     <div class="div-1">
-                        <input type="number" id="cantidadBurguer100g" name="cantidadBurguer100g" min="0" placeholder="cantidad">
+                        <input type="number" id="cantidadBurguer100g" name="cantidadBurguer100g" min="0" value="0" placeholder="cantidad">
                     </div>
                     <div>
                         <input type="button" value="Información" onclick="informacionHamburguesa()">
@@ -46,7 +46,7 @@
                             title="Beacon, Lechuga, Carne de Vacuno 200g, Tomate, Salsa Barbacoa, Queso"
                             style="text-decoration: none;">Hamburguesa de Carne 200g - 10$</abbr></label>
                     <div class="div-1">
-                        <input type="number" id="cantidadBurguer200g" name="cantidadBurguer200g" min="0" placeholder="cantidad">
+                        <input type="number" id="cantidadBurguer200g" name="cantidadBurguer200g" min="0" value="0" placeholder="cantidad">
                     </div>
                     <div>
                         <input type="button" value="Información" onclick="informacionHamburguesa()">
@@ -63,7 +63,7 @@
                             title="Beacon, Lechuga, Carne de Vacuno 300g, Tomate, Salsa Barbacoa, Queso"
                             style="text-decoration: none;">Hamburguesa de Carne 300g - 15$</abbr></label>
                     <div class="div-1">
-                        <input type="number" id="cantidadBurguer300g" name="cantidadBurguer300g" min="0" placeholder="cantidad">
+                        <input type="number" id="cantidadBurguer300g" name="cantidadBurguer300g" min="0" value="0" placeholder="cantidad">
                     </div>
                     <div>
                         <input type="button" value="Información" onclick="informacionHamburguesa()">
@@ -276,11 +276,11 @@
         
 
         <aside id="observ">
-            Observaciones<br> <textarea id="txtObs" cols="30" rows="10"></textarea>
+            Observaciones<br> <textarea id="txt1" cols="30" rows="10"></textarea>
         </aside>
 
         <aside id="confirmar">
-            <a href="confirmar.html" target="_self">Confirmar cesta</a>
+            <a href="confirmar.html" onclick="cookieTxt1(); calcularPrecio()">Confirmar cesta</a>
         </aside>
     </section>
 </main>

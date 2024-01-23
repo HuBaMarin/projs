@@ -4,39 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
     
     <main>
-        <aside class="asideP">
-            <input type="button" onclick="calcularPrecio()" value="VER PEDIDO" id="btnPedido">
-            <div id="miTicket"></div>
-            <div id="pagar">
-                <p>PRECIO:</p>
-                <div id="precioF"></div>
-                <input type="button" onclick="pagarTicket()" value="PAGAR" id="btnPagar">
-            </div>
+        <aside>
 
-            <div id="ticketnum1">
-                <h2>RECOGE AQUÍ TU TICKET</h2>
-                <div id="ticketnum2">
-                    <p onclick="pagarTicket()" id="titulo"></p>
-                    <p onclick="pagarTicket()" id="numRandom"></p>
-                </div>
-                <div id="reinicio">
-                    <a href="index.html" id="link"><input type="button" onclick="empezarPedido()" value="NUEVO PEDIDO"></a>
-                    <input type="button" onclick="cancelarPedido()" value="CANCELAR PEDIDO" id="btnCancelar">
-                </div>
-                
-            </div>
+            <p id="infoElementos"></p>
 
-            <div>
-                Observaciones
-                <div id="Obs">
-
-                </div>
-            </div>
+            <textarea id="txt2" cols="30" rows="10">
+            </textarea>
+            <button onclick="infoCookie()">Información</button>
            
         </aside>
 
