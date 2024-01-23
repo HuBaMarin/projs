@@ -271,33 +271,16 @@
             </article>
         </article>
 
-        <!--Apartado de pagar y ticket-->
-        <aside class="asideP">
-            <input type="button" onclick="calcularPrecio()" value="VER PEDIDO" id="btnPedido">
-            <div id="miTicket"></div>
-            <div id="pagar">
-                <p>PRECIO:</p>
-                <div id="precioF"></div>
-                <input type="button" onclick="pagarTicket()" value="PAGAR" id="btnPagar">
-            </div>
+       
+        <p id="mostrarFecha"></p>
+        
 
-            <div id="ticketnum1">
-                <h2>RECOGE AQUÍ TU TICKET</h2>
-                <div id="ticketnum2">
-                    <p onclick="pagarTicket()" id="titulo"></p>
-                    <p onclick="pagarTicket()" id="numRandom"></p>
-                </div>
-                <div id="reinicio">
-                    <a href="index.html" id="link"><input type="button" onclick="empezarPedido()" value="NUEVO PEDIDO"></a>
-                    <input type="button" onclick="cancelarPedido()" value="CANCELAR PEDIDO" id="btnCancelar">
-                </div>
-                <p id="mostrarFecha"></p>
-            </div>
+        <aside id="observ">
+            Observaciones<br> <textarea id="txtObs" cols="30" rows="10"></textarea>
         </aside>
 
-        <aside>
-
-            <label for=""> Observaciones</label><textarea name="" id="" cols="30" rows="10"></textarea>
+        <aside id="confirmar">
+            <a href="confirmar.html" target="_self">Confirmar cesta</a>
         </aside>
     </section>
 </main>

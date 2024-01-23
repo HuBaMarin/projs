@@ -196,7 +196,7 @@ function pagarTicket(){
 
     //Número aleatorio del pedido
     let numTicket = document.getElementById("numRandom");
-    numTicket.innerHTML = ""+Math.floor(Math.random() * 100) + 1;
+    numTicket.innerHTML = Math.floor(Math.random() * 100) + 1;
   }
 }
 
@@ -261,3 +261,4 @@ function informacionNuggets(){
 function informacionMcFlurry(){
     alert("Trozos de oreo, chocolate,azúcar, leche");
 }
+/*Elementos de confirmar*/

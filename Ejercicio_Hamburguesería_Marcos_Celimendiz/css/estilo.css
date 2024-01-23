@@ -1,22 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main{
+.main {
     width: 100%;
     height: 100%;
 }
 
 /*Inicio Header*/
-.head{
+.head {
     width: 100%;
     background-color: black;
     margin-bottom: 2%;
 }
 
-.head h1{
+.head h1 {
     padding: 2%;
     font-size: 50px;
     color: white;
@@ -24,17 +24,18 @@
     align-items: center;
     justify-content: center;
 }
+
 /*Fin header*/
 
 /*Inicio sección*/
-.seccion-1{
+.seccion-1 {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.articuloP{
+.articuloP {
     width: 70%;
     height: 100%;
     display: flex;
@@ -42,7 +43,7 @@
 }
 
 
-.articulo-1{
+.articulo-1 {
     padding: 2%;
     width: 100%;
     height: 100%;
@@ -52,7 +53,7 @@
     align-items: center;
 }
 
-.aside-1{
+.aside-1 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,13 +62,13 @@
     align-items: center;
 }
 
-.img-1{
+.img-1 {
     width: 80%;
     height: 80%;
     margin: 2%;
 }
 
-.div-1{
+.div-1 {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -75,32 +76,34 @@
     align-items: center;
 }
 
-.asideP{
+.asideP {
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 /*añadido para la fecha*/
-aside #mostrarFecha{
+aside #mostrarFecha {
     font-size: 1vw;
 }
-#btnPedido{
+
+#btnPedido {
     width: 50%;
     height: 20%;
     cursor: pointer;
     background-color: rgb(255, 191, 72);
-    -webkit-transition:all 500ms ease;
-    -o-transition:all 500ms ease;
-    transition:all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
-#btnPedido:hover{
+#btnPedido:hover {
     border-radius: 10px;
 }
 
-#miTicket{
+#miTicket {
     margin: 2%;
     width: 100%;
     height: 100%;
@@ -110,31 +113,31 @@ aside #mostrarFecha{
     justify-content: center;
 }
 
-#pagar{
+#pagar {
     width: 50%;
     margin-bottom: 25%;
     display: flex;
     flex-direction: row;
 }
 
-#precioF{
+#precioF {
     width: 60%;
 }
 
-#btnPagar{
+#btnPagar {
     width: 40%;
     background-color: rgb(95, 231, 95);
-    -webkit-transition:all 500ms ease;
-    -o-transition:all 500ms ease;
-    transition:all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
     cursor: pointer;
 }
 
-#btnPagar:hover{
+#btnPagar:hover {
     border-radius: 10px;
 }
 
-#ticketnum1{
+#ticketnum1 {
     width: 70%;
     border-radius: 10px;
     display: flex;
@@ -143,7 +146,7 @@ aside #mostrarFecha{
     justify-content: center;
 }
 
-#ticketnum2{
+#ticketnum2 {
     width: 70%;
     height: 100%;
     border: 2px solid black;
@@ -154,17 +157,17 @@ aside #mostrarFecha{
     justify-content: center;
 }
 
-#titulo{
+#titulo {
     margin-top: 10%;
     font-size: 40px;
 }
 
-#numRandom{
+#numRandom {
     margin-top: 5%;
     font-size: 100px;
 }
 
-#reinicio{
+#reinicio {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -173,23 +176,35 @@ aside #mostrarFecha{
     margin-top: 20%;
 }
 
-#btnCancelar{
+#btnCancelar {
     margin-left: 2%;
     width: 50%;
     background-color: rgb(231, 55, 55);
-    -webkit-transition:all 500ms ease;
-    -o-transition:all 500ms ease;
-    transition:all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
     cursor: pointer;
 }
 
-#btnCancelar:hover{
+#btnCancelar:hover {
     border-radius: 50px;
 }
 
-#link{
+#link {
     width: 80%;
 }
+
+#confirmar {
+    position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+#observ {
+    display: block;
+    top: 15%;
+    position: absolute;
+    left: 70%;
+}
+
 /*Fin de sección*/
-
-
