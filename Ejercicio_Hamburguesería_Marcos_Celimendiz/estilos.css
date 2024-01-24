@@ -20,3 +20,59 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#txt2{
+    font-size: 14px;
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 35px #000000;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    resize: none;
+
+}
+#infoElementos{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3),
+    0 -4px 10px rgba(255,255,255,0.3);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid black;
+    background-color: black;
+    text-align: justify-all;
+    width: 25%;
+
+}
+    #info{
+    /*background color black, text color white, glow effect white with black border*/
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 35px #000000;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+#precioTotal{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    width: 25%;
+}
+#numeroPedido{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    width: 25%;
+}

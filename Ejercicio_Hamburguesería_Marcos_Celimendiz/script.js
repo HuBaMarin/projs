@@ -56,45 +56,6 @@ const postre2 = new Postre("McFlurry 2", 3);
 const postre3 = new Postre("McFlurry 3", 4);
 
 
-//function calcularPrecio() {
-/* let elementos = {
-   burguer100g: document.getElementById("cantidadBurguer100g").value,
-   burguer200g: document.getElementById("cantidadBurguer200g").value,
-   burguer300g: document.getElementById("cantidadBurguer300g").value,
-   patPeque: document.getElementById("cantidadPatPeque").value,
-   patMed: document.getElementById("cantidadPatMed").value,
-   patGran: document.getElementById("cantidadPatGran").value,
-   vaso05: document.getElementById("cantidadVaso05").value,
-   vaso075: document.getElementById("cantidadVaso075").value,
-   vaso1: document.getElementById("cantidadVaso1").value,
-   nug1: document.getElementById("cantidadNug1").value,
-   nug2: document.getElementById("cantidadNug2").value,
-   nug3: document.getElementById("cantidadNug3").value,
-   mc1: document.getElementById("cantidadMc1").value,
-   mc2: document.getElementById("cantidadMc2").value,
-   mc3: document.getElementById("cantidadMc3").value
-
- }*/
-
-// localStorage.setItem("elementos", JSON.stringify(elementos));
-
-
-
-//Calcula el precio total
-/*const precioTotal = parseInt(totalBurguer100g) + parseInt(totalBurguer200g) + parseInt(totalBurguer300g) +
-  parseInt(totalPatPeque) + parseInt(totalPatMed) + parseInt(totalPatGran) + parseInt(totalVaso05) + parseInt(totalVaso075) + parseInt(totalVaso1)
-  + parseInt(totalNug1) + parseInt(totalNug2) + parseInt(totalNug3) + parseInt(totalMc1) + parseInt(totalMc2) + parseInt(totalMc3);
-*/
-
-
-//Borra todos los inputs
-/*var inputs = document.querySelectorAll('input');
-for (var i = 0; i < inputs.length; i++) {
-  if (inputs[i].type === "number") {
-    inputs[i].value = "0";
-  }
-}
-}*/
 
 function pagarTicket() {
 
@@ -181,30 +142,6 @@ function informacionNuggets() {
 function informacionMcFlurry() {
   alert("Trozos de oreo, chocolate,azúcar, leche");
 }
-function cookieTxt1() {
-  let cookieTxt = document.getElementById("txt1");
-  localStorage.setItem("txt1", cookieTxt.value);
-
-}
-
-function recogerValores() {
-
-  let valores = [
-    { "nombre": "hamburguesa100g", "precio": document.getElementById("cantidadBurguer100g").value > 0 ? document.getElementById("cantidadBurguer100g").value : 0 }
-  ];
-  /*{"nombre": "hamburguesa200g","precio":0},
-    {"nombre": "hamburguesa300g","precio":0},
-    {"nombre": "PatPeque"},
-    {"nombre": "PatMed"},
-    {"nombre": "PatGran"},
-  
-    {"nombre": "cantidadVaso05"},
-    {"nombre": "cantidadVaso075"},
-    {"nombre": "cantidadVaso1"}*/
-
-
-  localStorage.setItem("valores", JSON.stringify(valores));
-}
 
 function respConfirmar() {
   //funcion cookieTxt1
@@ -218,30 +155,30 @@ function respConfirmar() {
     { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadBurguer300g").value > 0 ? document.getElementById("cantidadBurguer300g").value : 0, "precio": 15 },
 
     { "nombre": "Patatas Pequeñas", "cantidad": document.getElementById("cantidadPatPeque").value > 0 ? document.getElementById("cantidadPatPeque").value : 0, "precio": 2 },
-    { "nombre": "patatas medianas", "cantidad": document.getElementById("cantidadPatMed").value > 0 ? document.getElementById("cantidadPatMed").value : 0, "precio": 3 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadPatGran").value > 0 ? document.getElementById("cantidadPatGran").value : 0, "precio": 4 },
+    { "nombre": "Patatas Medianas", "cantidad": document.getElementById("cantidadPatMed").value > 0 ? document.getElementById("cantidadPatMed").value : 0, "precio": 3 },
+    { "nombre": "Patatas Grandes", "cantidad": document.getElementById("cantidadPatGran").value > 0 ? document.getElementById("cantidadPatGran").value : 0, "precio": 4 },
 
-    { "nombre": "Vaso 05", "cantidad": document.getElementById("cantidadVaso05").value > 0 ? document.getElementById("cantidadVaso05").value : 0, "precio": 1 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadVaso075").value > 0 ? document.getElementById("cantidadVaso075").value : 0, "precio": 2 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadVaso1").value > 0 ? document.getElementById("cantidadVaso1").value : 0, "precio": 3 },
+    { "nombre": "Vaso de 0,5 litros", "cantidad": document.getElementById("cantidadVaso05").value > 0 ? document.getElementById("cantidadVaso05").value : 0, "precio": 1 },
+    { "nombre": "Vaso de 0,75 litros", "cantidad": document.getElementById("cantidadVaso075").value > 0 ? document.getElementById("cantidadVaso075").value : 0, "precio": 2 },
+    { "nombre": "Vaso de 1 litro", "cantidad": document.getElementById("cantidadVaso1").value > 0 ? document.getElementById("cantidadVaso1").value : 0, "precio": 3 },
 
     { "nombre": "Pack Nuggets pequeño", "cantidad": document.getElementById("cantidadNug1").value > 0 ? document.getElementById("cantidadNug1").value : 0, "precio": 6 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadNug2").value > 0 ? document.getElementById("cantidadNug2").value : 0, "precio": 10 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadNug3").value > 0 ? document.getElementById("cantidadNug3").value : 0, "precio": 15 },
+    { "nombre": "Pack Nuggets mediano", "cantidad": document.getElementById("cantidadNug2").value > 0 ? document.getElementById("cantidadNug2").value : 0, "precio": 10 },
+    { "nombre": "Pack Nuggets grande", "cantidad": document.getElementById("cantidadNug3").value > 0 ? document.getElementById("cantidadNug3").value : 0, "precio": 15 },
 
 
     { "nombre": "MCFlurry Pequeño", "cantidad": document.getElementById("cantidadMc1").value > 0 ? document.getElementById("cantidadMc1").value : 0, "precio": 2 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadMc2").value > 0 ? document.getElementById("cantidadMc2").value : 0, "precio": 3 },
-    { "nombre": "Hamburguesa de 300 gramos", "cantidad": document.getElementById("cantidadMc3").value > 0 ? document.getElementById("cantidadMc3").value : 0, "precio": 4 },
+    { "nombre": "MCFlurry Mediano", "cantidad": document.getElementById("cantidadMc2").value > 0 ? document.getElementById("cantidadMc2").value : 0, "precio": 3 },
+    { "nombre": "MCFlurry Grande", "cantidad": document.getElementById("cantidadMc3").value > 0 ? document.getElementById("cantidadMc3").value : 0, "precio": 4 },
 
 
   ];
 
-  let numPedido = Math.floor(Math.random() * (2000 - 0 + 1)) + 0;
+  let numPedido = Math.floor(Math.random() * (2000 + 1));
 
   localStorage.setItem("valores", JSON.stringify(valores));
 
-  localStorage.setItem("numPedido", numPedido);
+  localStorage.setItem("numPedido", JSON.stringify(numPedido));
 
   if (window.confirm('¿Desea continuar?')) {
     window.location.href = "confirmar.html";

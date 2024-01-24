@@ -85,10 +85,53 @@
 }
 
 /*añadido para la fecha*/
-aside #mostrarFecha {
-    font-size: 1vw;
-}
 
+@keyframes cambiarcolor {
+    0%   {color: darkmagenta;}
+    25% {color: crimson;}
+    50% {color: black;}
+    75% {color: #4d4e0a;}
+    100% {color: #03444e;}
+}
+#mostrarFecha {
+    animation-name: cambiarcolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/* boton confirmar*/
+#confirmar {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+#confirmar:hover {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px 0 #000000;
+    transition: 0.5s;
+
+}
+/*area de texto*/
+#txt1 {
+    width: 300px;
+    height: 120px;
+    border: 3px solid black;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: white;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
 #btnPedido {
     width: 50%;
     height: 20%;
@@ -98,6 +141,45 @@ aside #mostrarFecha {
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
+
+/*Inputs de numeros*/
+#cantidadBurguer100g,
+#cantidadBurguer200g,
+#cantidadBurguer300g,
+#cantidadPatPeque,
+#cantidadPatMed,
+#cantidadPatGran,
+#cantidadVaso1,
+#cantidadVaso05,
+#cantidadVaso075,
+#cantidadNug1,
+#cantidadNug2,
+#cantidadNug3,
+#cantidadMc1,
+#cantidadMc2,
+#cantidadMc3 {
+    width:auto;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+/*btn info*/
+
+.btnInformacion{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 4%;
+}
+
+.btnInformacion:hover {
+    color: black;
+    background-color: darkcyan;
+    border-color: black;
+}
+
 
 #btnPedido:hover {
     border-radius: 10px;
@@ -206,5 +288,11 @@ aside #mostrarFecha {
     position: absolute;
     left: 70%;
 }
+#ImgLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 
+}
 /*Fin de sección*/
