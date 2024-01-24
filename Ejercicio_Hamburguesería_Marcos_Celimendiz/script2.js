@@ -1,16 +1,19 @@
-function infoCookie(){
+function infoCookie() {
     document.getElementById("txt2").value = localStorage.getItem("txt1");
 
-    let items = localStorage.getItem('elementos');
+    
+    let array = JSON.parse(localStorage.getItem("valores"));
 
-    for (let i = 0; i < items; i++) {
-        //show items
-        document.getElementById("infoElementos").innerHTML += items[i] + "<br>";
-       if (items[i]!=="0") {
-           document.getElementById("infoElementos").innerHTML += items[i] + "<br>";
-       }
+    let total=0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].cantidad > 0) {
+            total+=array[i].cantidad*array[i].precio;
+            document.getElementById("infoElementos").innerHTML += array[i].nombre + " Cantidad " + array[i].cantidad+ " Precio "+array[i].precio+"<br>";
+        }
+
     }
 
-
+    document.getElementById("numeroPedido").innerHTML="Su número de pedido es "+localStorage.getItem("numPedido");
+    document.getElementById("precioTotal").innerHTML="Total pedido: "+total
 }
 
